@@ -10,7 +10,8 @@ export RLM_LICENSE=/opt/rlm/licenses
 #cp /opt/rlm/licenses/foundry_float.lic /opt/foundry_float.lic
 
 # Output info
-echo "N" | /usr/local/foundry/LicensingTools7.3/FoundryLicenseUtility -d
+/usr/local/foundry/LicensingTools7.3/bin/RLM/rlmutil rlmhostid
+#echo "N" | /usr/local/foundry/LicensingTools7.3/FoundryLicenseUtility -d
 #echo "N" | /usr/local/foundry/LicensingTools7.3/FoundryLicenseUtility -i
 #echo "N" | /usr/local/foundry/LicensingTools7.3/FoundryLicenseUtility -n
 #echo "N" | /usr/local/foundry/LicensingTools7.3/FoundryLicenseUtility -v

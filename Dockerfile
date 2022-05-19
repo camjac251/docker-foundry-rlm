@@ -16,6 +16,8 @@ RUN wget https://www.reprisesoftware.com/license_admin_kits/x64_l1.admin.tar.gz
 RUN tar xvf x64_l1.admin.tar.gz
 RUN rm -f x64_l1.admin.tar.gz
 RUN cp -f /x64_l1.admin/rlm /usr/local/foundry/LicensingTools7.3/bin/RLM/rlm.foundry
+RUN cp -f /x64_l1.admin/rlmutil /usr/local/foundry/LicensingTools7.3/bin/RLM/rlmutil
+
 RUN rm -rf /x64_l1.admin/
 
 VOLUME /opt/rlm/licenses
