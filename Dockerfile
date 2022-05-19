@@ -8,8 +8,9 @@ RUN apt-get install -qqy wget apt-utils tzdata
 RUN wget https://www.reprisesoftware.com/license_admin_kits/x64_l1.admin.tar.gz
 RUN tar xvf x64_l1.admin.tar.gz
 RUN rm -f x64_l1.admin.tar.gz
-RUN cp -f /x64_l1.admin/* /usr/local/rlm/
-RUN rm -rf /x64_l1.admin/
+RUN mkdir /usr/local/rlm
+RUN cp -f x64_l1.admin/* /usr/local/rlm/
+RUN rm -rf x64_l1.admin/
 
 VOLUME /opt/rlm/licenses
 
